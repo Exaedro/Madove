@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'HackBold';
+    src: url('../fonts/HackBold.ttf');
+}
+
+@font-face {
+    font-family: 'HackRegular';
+    src: url('../fonts/HackRegular.ttf');
+}
+
+body {
+    background-color: #ededed;
+    font-family: 'HackRegular', system-ui, sans-serif;
+}
+
+section {
+    width: 1140px;
+    margin: 150px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section h1, section h2 {
+    font-size: 42px;
+    font-family: 'HackBold';
+    margin-bottom: 30px;
+}
+
+section p, li {
+    line-height: 1.5;
+    text-wrap: balance;
+    font-size: 20px;
+}
+
+section img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.column {
+    margin-bottom: 100px;
+}
+
+.card {
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.card-header {
+    padding: 15px;
+    border-bottom: 2px solid rgb(200 200 200);
+    text-align: center;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.services p:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.services h4 {
+    font-family: 'HackBold', system-ui, sans-serif;
+    font-size: 20px;
+}
+
+.menu {
+    position: fixed;
+    top: 150px;
+    left: 50px;
+}
+
+aside {
+    position: fixed;
+    top: 150px;
+    left: 40px;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+aside a {
+    color: #000;
+    text-decoration: none;
+}
+
+aside li {
+    width: min-content;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+aside li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    height: 2px;
+    width: 30px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+aside li:hover::before {
+    width: 50px;
+}
+
+.dreg {
+    background: linear-gradient(90deg, #da5151, #9040eb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 575px) {
+    section {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    section {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) { 
+    section {
+        width: 720px;
+    }
+}
+
+@media (max-width: 992px) {
+    .row {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 1250px) {
+    aside {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {  
+    section {
+        width: 960px;
+    }
+}

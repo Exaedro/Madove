@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'HackBold';
+    src: url('../fonts/HackBold.ttf');
+}
+
+@font-face {
+    font-family: 'HackRegular';
+    src: url('../fonts/HackRegular.ttf');
+}
+
+body {
+    background-color: #ededed;
+    font-family: 'HackRegular', system-ui, sans-serif;
+}
+
+main {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: #d9d9d9;
+    padding: 50px 70px 50px 70px;
+    border-radius: 7px;
+}
+
+main input {
+    font-size: 20px;
+    font-family: 'HackRegular', system-ui, sans-serif;
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 12px 18px;
+    border-bottom: 2px solid black;
+    margin-bottom: 40px;
+}
+
+main button {
+    background: linear-gradient(90deg, #bc20e3, #4527df);
+    color: #fff;
+    padding: 20px 0px 20px 0px;
+    font-size: 20px;
+    font-family: 'HackBold', system-ui, sans-serif;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+main button:hover {
+    cursor: pointer;
+}
