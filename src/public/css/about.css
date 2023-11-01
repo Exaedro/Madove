@@ -156,7 +156,7 @@ aside li:hover::before {
 
 nav {
     top: 0;
-    left: 0;
+    left: 12px;
     padding: 30px;
     background-color: #ededed;
     width: 3000px;
@@ -200,6 +200,9 @@ nav a {
 }
 
 @media (min-width: 992px) {  
+    nav {
+        width: 0px;
+    }
     section {
         width: 960px;
     }
