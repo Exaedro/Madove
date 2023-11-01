@@ -28,6 +28,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 
 main h1 {
@@ -67,4 +68,17 @@ main button {
 
 main button:hover {
     cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    main form {
+        width: 300px!important;
+    }
+}
+
+@media (max-width: 512px) {
+    main form {
+        width: 400px;
+        padding: 30px 50px 30px 50px;
+    }
 }
