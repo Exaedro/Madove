@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'HackBold';
     src: url('../fonts/HackBold.ttf');
@@ -135,6 +139,34 @@ aside li:hover::before {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.arrow img {
+    width: 40px;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px;
+    background-color: #ededed;
+    border-radius: 100%;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    padding: 30px;
+    background-color: #ededed;
+    width: 3000px;
+    position: fixed;
+}
+
+nav a {
+    font-family: 'HackBold', system-ui, sans-serif;
+    color: #000;
+    text-decoration: none;
 }
 
 @media (max-width: 575px) {
